@@ -17,6 +17,34 @@ A responsive, atomic, and modular Contact Us workflow built using React + Materi
 
 ---
 
+## Folder Structure
+
+* `src`: Source code folder  
+  + `components`: React components folder  
+    - `Contact`: Contact section components  
+      * `ContactForm.jsx`: 📝 User input form  
+      * `OtpVerification.jsx`: 🔐 OTP input and verification logic  
+      * `OtpSuccessMessage.jsx`: ✅ Success thank-you screen  
+      * `OtpInputGroup.jsx`: 🔢 OTP input container (4/6 boxes)  
+      * `SingleOtpInput.jsx`: 🔲 Individual OTP input box  
+    - `Modal`:  
+      * `GeneralModal.jsx`: 📦 Reusable modal wrapper  
+    - `Navbar`:  
+      * `Navbar.jsx`: 🧭 Top navigation bar  
+      * `ToggleIcon.jsx`: ☰ / ❌ mobile toggle icon  
+  + `hooks`:  
+    - `useFetch.js`: 🔄 Custom API hook  
+  + `utils`:  
+    - `constants.js`: 🌐 API endpoints, codes  
+    - `maskEmail.js`: ✉️ Email masking helper  
+
+* `public`: Public assets folder  
+* `docs`: Documentation folder  
+* `tests`: Unit tests folder  
+
+
+---
+
 
 ## ⚙️ Technologies Used
 
