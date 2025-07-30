@@ -19,6 +19,7 @@ const OtpVerification = ({ goToNextStep, goToPreviousStep, contactData, handleCl
         handleClose();
     };
 
+
     const handleVerifyOTP = async (e) => {
         e.preventDefault(); // prevents form reload
 
@@ -102,9 +103,9 @@ const OtpVerification = ({ goToNextStep, goToPreviousStep, contactData, handleCl
 
                 <OtpInputGroup length={otpLength} onOtpChange={setOtpValue} />
 
-                {otpError?.error && (
+                {otpError && (
                     <Typography variant="body2" color="error">
-                        {otpError.error}
+                        {otpError}
                     </Typography>
                 )}
 
